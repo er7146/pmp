@@ -13,7 +13,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'rake_db_dump'
 # Use unicorn as the app server
-  gem 'unicorn'
+  #gem 'unicorn'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
