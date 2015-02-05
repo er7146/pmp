@@ -5,75 +5,51 @@ users:
   - id
   - email
   - encrypted_password
-  - reset_password_token
-  - reset_password_sent_at
   - remember_created_at
   - sign_in_count
   - current_sign_in_at
   - last_sign_in_at
   - current_sign_in_ip
   - last_sign_in_ip
-  - confirmation_token
-  - confirmed_at
-  - confirmation_sent_at
-  - unconfirmed_email
   - created_at
   - updated_at
   - name
   records: 
   - - '1'
     - er7146@hotmail.com
-    - "$2a$10$R6CyWyFs/.l2rs3WYHzz9uZD4ka4gMOwN6PeCzqjInY5cAiNj5Yca"
-    - 
-    - 
+    - "$2a$10$6SnsN5s8lGAIDC76h0v0N.uT6srkOQgFfGFvW5WKt8UXO35YLZ0Vy"
     - 
     - '0'
     - 
     - 
     - 
     - 
-    - 
-    - 
-    - 
-    - 
-    - '2015-02-05 06:04:23.215306'
-    - '2015-02-05 06:04:23.215306'
+    - '2015-02-05 07:41:21.426741'
+    - '2015-02-05 07:41:21.426741'
     - 
   - - '2'
     - dfallander@pepperdines.com
-    - "$2a$10$AYL8lFASVfa4ox1DyEuHYe.0KcB79ZnyFHTVxyIM1fgSHMth5tkhy"
-    - 
-    - 
+    - "$2a$10$JyyC3vNyKK9SkVW5L2zXxO0mkn9hkRwfwnCX1lGV.bDddhof/lXHK"
     - 
     - '0'
     - 
     - 
     - 
     - 
-    - 
-    - 
-    - 
-    - 
-    - '2015-02-05 06:04:23.29497'
-    - '2015-02-05 06:04:23.29497'
+    - '2015-02-05 07:41:21.504882'
+    - '2015-02-05 07:41:21.504882'
     - Dean Fallander
   - - '3'
     - ddrew@pepperdines.com
-    - "$2a$10$ZL.Cy9TzzxsZfrAyeUGgAOZcpBw3NjELV0qkkLDNzAtrlWZm4Vwsa"
-    - 
-    - 
+    - "$2a$10$kVV/70o05mswrFOIPdnPdeEdrBNtCR6XxmR3J6ugi.aRl7m8dbYzK"
     - 
     - '0'
     - 
     - 
     - 
     - 
-    - 
-    - 
-    - 
-    - 
-    - '2015-02-05 06:04:23.371895'
-    - '2015-02-05 06:04:23.371895'
+    - '2015-02-05 07:41:21.581149'
+    - '2015-02-05 07:41:21.581149'
     - Diane Drew
 
 ---
