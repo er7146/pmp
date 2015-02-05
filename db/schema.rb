@@ -26,16 +26,6 @@ ActiveRecord::Schema.define(version: 20150205000217) do
     t.integer "ship_method_id"
   end
 
-  create_table "orders", force: true do |t|
-    t.integer "user_id"
-    t.integer "po_num"
-    t.integer "product_id"
-    t.integer "quantity"
-    t.text    "comments"
-    t.string  "image_upload"
-    t.float   "total_price"
-  end
-
   create_table "products", force: true do |t|
     t.string "name"
     t.string "image_filename"
