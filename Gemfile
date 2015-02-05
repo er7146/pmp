@@ -26,7 +26,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   #gem 'sqlite3'
-  gem 'pg'
+  #gem 'pg'
   gem 'yaml_db'
 end
 group :production do
