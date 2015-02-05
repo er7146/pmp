@@ -8,10 +8,7 @@
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
-User.create! name: 'Dean Fallander' , 
-  email: 'dfallander@pepperdines.com' , password: 'deanf@pmp1' , password_confirmation: 'deanf@pmp1'
-User.create! name: 'Diane Drew' ,
-  email: 'ddrew@pepperdines.com' , password: 'diane@pmp1' , password_confirmation: 'diane@pmp1'
+
 
 Product.create! name: 'Stamps',
   image_filename: 'Pepp_logo.png',
