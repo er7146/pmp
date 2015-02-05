@@ -10,6 +10,6 @@ class User < ActiveRecord::Base
     class_name: "orders", foreign_key: "type"
 
   validate :name ,   presence: true, uniqueness: true
-  validate :email ,   presence: true, uniqueness: true
+  #validate :email ,   presence: true, uniqueness: true
   
 end
