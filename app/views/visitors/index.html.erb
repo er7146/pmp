@@ -1,0 +1,13 @@
+<div align="center"><h3>Welcome to Pepperdine's<br> Customer Center </h3>
+
+<% if user_signed_in? %>
+  <% @user = current_user %>
+  <li><%= link_to 'Continue to My Account', users_path %></li>
+  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+  <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
+<% else %>
+  
+<p>Please <%= link_to 'Login', new_user_session_path %> or 
+<%= link_to 'Sign up', new_user_registration_path %> to continue
+</div>
+<% end %>

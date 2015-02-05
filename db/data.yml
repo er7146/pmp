@@ -1,0 +1,101 @@
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - confirmation_token
+  - confirmed_at
+  - confirmation_sent_at
+  - unconfirmed_email
+  - created_at
+  - updated_at
+  - name
+  records: 
+  - - '1'
+    - user@example.com
+    - "$2a$10$/hggrLhlXkEQf/bzt2VvUuxeR4.xVxBf0Sniyjp/lsUAaTZnEdot6"
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - '2015-02-05 01:16:07.807941'
+    - '2015-02-05 01:16:07.807941'
+    - 
+  - - '2'
+    - dfallander@pepperdines.com
+    - "$2a$10$oC02hjSEEY/iOkS58tvWjOEilteZ26yCqwdEkHHheRe3N3amUeJtO"
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - '2015-02-05 01:16:07.889753'
+    - '2015-02-05 01:16:07.889753'
+    - Dean Fallander
+
+---
+products:
+  columns:
+  - id
+  - name
+  - image_filename
+  - price_per_item
+  records: 
+  - - '1'
+    - Stamps
+    - Pepp_logo.png
+    - '100'
+  - - '2'
+    - Business Cards
+    - Pepp_logo.png
+    - '29.99'
+  - - '3'
+    - Banners
+    - Pepp_logo.png
+    - '99'
+  - - '4'
+    - Brochures
+    - Pepp_logo.png
+    - '250'
+
+---
+ship_methods:
+  columns:
+  - id
+  - name
+  - price_per_cart
+  - price_per_item
+  records: 
+  - - '1'
+    - Ground
+    - '10'
+    - '0.1'
+  - - '2'
+    - 2nd Day
+    - '15'
+    - '0.1'
