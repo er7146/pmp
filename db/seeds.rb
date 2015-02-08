@@ -8,22 +8,22 @@
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
-User.create! name: 'Dean Fallander' , 
-  email: 'dfallander@pepperdines.com' , password: 'deanf@pmp1' , password_confirmation: 'deanf@pmp1'
-User.create! name: 'Diane Drew' ,
-  email: 'ddrew@pepperdines.com' , password: 'diane@pmp1' , password_confirmation: 'diane@pmp1'
+User.create! email: 'dfallander@pepperdines.com' , password: 'deanf@pmp1' , password_confirmation: 'deanf@pmp1',
+             name: 'Dean Fallander'
+User.create! email: 'ddrew@pepperdines.com' , password: 'diane@pmp1' , password_confirmation: 'diane@pmp1' ,
+             name: 'Diane Drew' 
 
 Product.create! name: 'Stamps',
-  image_filename: 'Pepp_logo.png',
+  image_filename: 'pepp_logo.png',
   price_per_item: 100.00
 Product.create! name: 'Business Cards',
-  image_filename: 'Pepp_logo.png',
+  image_filename: 'pepp_logo.png',
   price_per_item: 29.99
 Product.create! name: 'Banners',
-  image_filename: 'Pepp_logo.png',
+  image_filename: 'pepp_logo.png',
   price_per_item: 99.00 
 Product.create! name: 'Brochures',
-  image_filename: 'Pepp_logo.png',
+  image_filename: 'pepp_logo.png',
   price_per_item: 250.00
 
 ShipMethod.create! name: "Ground",

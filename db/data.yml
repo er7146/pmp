@@ -11,45 +11,37 @@ users:
   - last_sign_in_at
   - current_sign_in_ip
   - last_sign_in_ip
-  - created_at
-  - updated_at
   - name
   records: 
   - - '1'
     - er7146@hotmail.com
-    - "$2a$10$6SnsN5s8lGAIDC76h0v0N.uT6srkOQgFfGFvW5WKt8UXO35YLZ0Vy"
+    - "$2a$10$Or.FGlJCGrHQuTt63sNzWu3HyBIXhboNAWdTKVLoRRd4HWqq4pPVG"
     - 
     - '0'
     - 
     - 
     - 
     - 
-    - '2015-02-05 07:41:21.426741'
-    - '2015-02-05 07:41:21.426741'
     - 
   - - '2'
     - dfallander@pepperdines.com
-    - "$2a$10$JyyC3vNyKK9SkVW5L2zXxO0mkn9hkRwfwnCX1lGV.bDddhof/lXHK"
-    - 
-    - '1'
-    - '2015-02-05 07:42:33.126771'
-    - '2015-02-05 07:42:33.126771'
-    - 127.0.0.1
-    - 127.0.0.1
-    - '2015-02-05 07:41:21.504882'
-    - '2015-02-05 07:42:33.129039'
-    - Dean Fallander
-  - - '3'
-    - ddrew@pepperdines.com
-    - "$2a$10$kVV/70o05mswrFOIPdnPdeEdrBNtCR6XxmR3J6ugi.aRl7m8dbYzK"
+    - "$2a$10$E7k3QZ2N1TOj3aCLy8H/vun08CzmIM1XPX4dn8XXeyv4xO56BS5kK"
     - 
     - '0'
     - 
     - 
     - 
     - 
-    - '2015-02-05 07:41:21.581149'
-    - '2015-02-05 07:41:21.581149'
+    - Dean Fallander
+  - - '3'
+    - ddrew@pepperdines.com
+    - "$2a$10$OWfw1.1/3cc32uR0eTTSTONnLm6511.sWx7wqQodOGYoKQVbv6fWq"
+    - 
+    - '0'
+    - 
+    - 
+    - 
+    - 
     - Diane Drew
 
 ---
@@ -62,54 +54,20 @@ products:
   records: 
   - - '1'
     - Stamps
-    - Pepp_logo.png
+    - pepp_logo.png
     - '100'
   - - '2'
     - Business Cards
-    - Pepp_logo.png
+    - pepp_logo.png
     - '29.99'
   - - '3'
     - Banners
-    - Pepp_logo.png
+    - pepp_logo.png
     - '99'
   - - '4'
     - Brochures
-    - Pepp_logo.png
+    - pepp_logo.png
     - '250'
-
----
-cart_lines:
-  columns:
-  - id
-  - cart_id
-  - product_id
-  - quantity
-  records: 
-  - - '1'
-    - '1'
-    - '1'
-    - '1'
-  - - '2'
-    - '1'
-    - '2'
-    - '0'
-  - - '3'
-    - '1'
-    - '3'
-    - '0'
-  - - '4'
-    - '1'
-    - '4'
-    - '0'
-
----
-carts:
-  columns:
-  - id
-  - ship_method_id
-  records: 
-  - - '1'
-    - '1'
 
 ---
 ship_methods:

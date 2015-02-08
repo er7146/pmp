@@ -47,8 +47,6 @@ ActiveRecord::Schema.define(version: 20150205000217) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "name"
   end
 
