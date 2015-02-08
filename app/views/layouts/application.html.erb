@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Rails Devise" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Devise" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "PMP Customer Center" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "PMP Customer Center" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -18,6 +18,6 @@
     </main>
   </body>
   <footer>
-     <%= render partial: "layouts/footer" %>
-   </footer>
+     <%= render 'layouts/footer' %>
+  </footer>
 </html>
