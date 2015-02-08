@@ -15,7 +15,7 @@ users:
   records: 
   - - '1'
     - er7146@hotmail.com
-    - "$2a$10$Or.FGlJCGrHQuTt63sNzWu3HyBIXhboNAWdTKVLoRRd4HWqq4pPVG"
+    - "$2a$10$nAlozbarUBoOpdAUJ5BWhu9.5yPp9BKswGtUi4oIWZG/JlCtyDw5y"
     - 
     - '0'
     - 
@@ -25,7 +25,7 @@ users:
     - 
   - - '2'
     - dfallander@pepperdines.com
-    - "$2a$10$E7k3QZ2N1TOj3aCLy8H/vun08CzmIM1XPX4dn8XXeyv4xO56BS5kK"
+    - "$2a$10$Fn9TfVJYVJ.PTS9xmiYu5e4/Q3GXwTpCm9Q3U2xDxjwXS9GSQNrcO"
     - 
     - '0'
     - 
@@ -35,7 +35,7 @@ users:
     - Dean Fallander
   - - '3'
     - ddrew@pepperdines.com
-    - "$2a$10$OWfw1.1/3cc32uR0eTTSTONnLm6511.sWx7wqQodOGYoKQVbv6fWq"
+    - "$2a$10$ugGSo1PgA5OTwzdf7aqM7ubLFhFCJL3XVet5a/uzvTjIkEUxn3gYy"
     - 
     - '0'
     - 
