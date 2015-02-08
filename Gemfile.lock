@@ -29,6 +29,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
+    awesome_print (1.6.1)
     bcrypt (3.1.9)
     better_errors (2.1.0)
       coderay (>= 1.0.0)
@@ -65,6 +66,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    dynamic_form (1.1.4)
     erubis (2.7.0)
     execjs (2.2.2)
     factory_girl (4.5.0)
@@ -88,6 +90,7 @@ GEM
       addressable (~> 2.3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    method_source (0.8.2)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.0)
@@ -96,6 +99,12 @@ GEM
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     pg (0.18.0)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
     puma (2.11.0)
       rack (>= 1.1, < 2.0)
     quiet_assets (1.1.0)
@@ -161,6 +170,7 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -194,6 +204,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   better_errors
   binding_of_caller
   bootstrap-sass
@@ -201,12 +212,14 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   database_cleaner
   devise
+  dynamic_form
   factory_girl_rails
   faker
   jbuilder (~> 2.0)
   jquery-rails
   launchy
   pg
+  pry-rails
   puma
   quiet_assets
   rails (= 4.1.6)
