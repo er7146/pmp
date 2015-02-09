@@ -81,12 +81,12 @@ Questions?:
   <%= submit_tag "Update", class: "form-control" %>
 
   Shipping total is:
-  $<%# sprintf('%.2f', @cart.ship_price) %>
+  $<%= sprintf('%.2f', @cart.ship_price) %>
 </p>
 
 <p>
   <b>Total price</b>
-  $<%# sprintf('%.2f', @cart.total_price) %>
+  $<%= sprintf('%.2f', @cart.total_price) %>
 </p>
 
 <% end %>
