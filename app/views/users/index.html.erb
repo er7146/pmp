@@ -1,47 +1,53 @@
 <div class="container">
+ <div align="right"><br><br>
+ <p>
+Questions:
+<a href="mailto:info@pepperdines.com?Subject=Customer%20Inquire" target="_top">Send Mail</a>
+</p>
+ </div>
   <div class="row">
  <div align="center">   <h3>Welcome <%= @user.name if @user.name %></h3>
   <br><br>
     <div align="center">
       <%= form_tag "/" do %>
-
-<table>
-  <tr>
-    <th>My Files</th>
-    <th>Product</th>
-    <th>Price</th>
-    <th>Quantity</th>
-    <th>Re-Order</th>
-    <th>Place New</th>
-    <th>Line price</th>
-  </tr>
-  <% @products.each do |product| %>
+ <table class="table table-condensed">
+    <tr>
+      <th>My Files</th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Re-Order</th>
+      <th>Place New Order</th>
+      <th>Line price</th>
+    </tr>
+    <% @products.each do |product| %>
     <% line = CartLine.find_by(cart_id: @cart.id, product_id: product.id) %>
     <tr>
       <td>
-        <%= image_tag product.image_filename, class: "form-control" %>
+        <%= link_to (image_tag product.image_filename), class: "form-control" %>
       </td>
-    
-    
+ 
       <td>
           <%= product.name %>
       </td>
-    
-    
+      
       <td>
           $<%= sprintf('%.2f', product.price_per_item) %> 
       </td>
-    
-    
+      
       <td>
+        <div class="col-xs-4">
+          
+  
         <%= text_field_tag "quantity_#{product.id}", 
           line.quantity, class: "form-control" %>
+       </div>
       </td>
-    
-    
-      <td>
+   
+       <td>
         <%= submit_tag "Re-order", class: "form-control" %>
       </td>
+    
     
       <td>
         <%= link_to "Place New", users_path %>
@@ -52,8 +58,10 @@
       </td>
     </tr>
   <% end %>
-</table>
-
+  </table>
+   </div>
+ <div class="form-group">
+</form>
 <br clear="both">
 
 <p>
@@ -73,12 +81,12 @@
   <%= submit_tag "Update", class: "form-control" %>
 
   Shipping total is:
-  $<%= sprintf('%.2f', @cart.ship_price) %>
+  $<%# sprintf('%.2f', @cart.ship_price) %>
 </p>
 
 <p>
   <b>Total price</b>
-  $<%= sprintf('%.2f', @cart.total_price) %>
+  $<%# sprintf('%.2f', @cart.total_price) %>
 </p>
 
 <% end %>
@@ -88,19 +96,15 @@
   <div class="form-group">
     <label for="exampleInputFile">Upload New File</label>
     <input type="file" id="exampleInputFile">
-    <p class="help-block">PDF, JPEG, TIFF, EPS, PNG</p>
-  </div>
-
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-File Requirements for Signs / Banners
+    <p class="help-block">File Requirements for Signs / Banners
 • Illustrator / Photoshop files saved as: .PDF, .EPS, .PSD, .AI
 • Provide files with a resolution of 300 dpi or better.
 • For designs with a bleed, please allow 1” on each side over the banner dimensions.
 • Include fonts or convert text to outlines whenever possible.
-• We can’t accept CorelDraw, Word or Publisher files.
+• We can’t accept CorelDraw, Word or Publisher files.</p>
+  </div>
 
-<div align="right"><br><br>
-Questions: info@pepperdines.com
-</div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
 </div>

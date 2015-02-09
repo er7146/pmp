@@ -15,7 +15,7 @@ gem 'rake_db_dump'
 gem 'dynamic_form' # for error_messages_for
 # Use unicorn as the app server
   #gem 'unicorn'
-  gem 'puma'
+  gem 'puma' # app server
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -28,8 +28,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
-  #gem 'sqlite3'
-  #gem 'pg'
   gem 'yaml_db'
 end
 group :production do
