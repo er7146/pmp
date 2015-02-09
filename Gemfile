@@ -30,7 +30,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'yaml_db'
 end
-group :production do
+group :production , :staging do
   gem 'rails_12factor'
   gem 'pg'
 end
