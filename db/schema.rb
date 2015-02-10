@@ -23,7 +23,10 @@ ActiveRecord::Schema.define(version: 20150205000217) do
   end
 
   create_table "carts", force: true do |t|
-    t.integer "ship_method_id"
+    t.integer  "user_id"
+    t.integer  "ship_method_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "products", force: true do |t|

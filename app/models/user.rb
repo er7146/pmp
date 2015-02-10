@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-
-
+   has_many :carts
+  
   validate :name ,   presence: true, uniqueness: true
   validate :email ,   presence: true, uniqueness: true
   

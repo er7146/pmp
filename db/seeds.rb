@@ -8,9 +8,9 @@
 #user = CreateAdminService.new.call
 #puts 'CREATED ADMIN USER:' << user.email 
 
-User.create! email: 'dfallander@pepperdines.com' , password: 'deanf@pmp1' , password_confirmation: 'deanf@pmp1',
+User.create! id: 2 , email: 'dfallander@pepperdines.com' , password: 'deanf@pmp1' , password_confirmation: 'deanf@pmp1',
              name: 'Dean Fallander'
-User.create! email: 'ddrew@pepperdines.com' , password: 'diane@pmp1' , password_confirmation: 'diane@pmp1' ,
+User.create! id: 3 , email: 'ddrew@pepperdines.com' , password: 'diane@pmp1' , password_confirmation: 'diane@pmp1' ,
              name: 'Diane Drew' 
 
 Product.create! name: 'Stamps',
@@ -32,3 +32,11 @@ ShipMethod.create! name: "Ground",
 ShipMethod.create! name: "2nd Day",
   price_per_cart: 15.00,
   price_per_item: 0.10
+ShipMethod.create! name: "Local Delivery",
+  price_per_cart: 0.00,
+  price_per_item: 0.00
+ShipMethod.create! name: "Customer Pick up",
+  price_per_cart: 0.00,
+  price_per_item: 0.00
+  
+  ActiveRecord::Base.connection.reset_pk_sequence! "users"

@@ -1,4 +1,33 @@
-<div align="center"><h3>My Profile</h3>
-  <p>Name: <%= @user.name if @user.name %></p>
-  <p>Email: <%= @user.email if @user.email %></p>
+<div align="center"><h4>My Order id# <%= @cart.id %>
+  for <%= @user.name if @user.name %></h4>
+  <p>Contact Email: <%= @user.email if @user.email %></p>
+   <table class="table">
+  <tr>
+    <th>Customer</th>
+    <th>Delivery</th>
+    <th>Shipping Cost</th>
+    <th>Total Price</th>
+  </tr>
+
+    <tr>
+      
+      <td>
+        <%= @cart.user.name  %>
+      </td>
+      
+      <td>
+        <%= @cart.ship_method.name  %>
+      </td>
+      <td>
+         $<%= sprintf('%.2f', @cart.ship_method.price_per_cart + @cart.ship_method.price_per_item) %>
+      </td>
+      
+      <td>
+         $<%= sprintf('%.2f', @cart.total_price) %>
+      </td>
+    </tr>
+  
+  
+</table>
+      <a href="/users">Back</a>
 </div>

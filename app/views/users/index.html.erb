@@ -9,64 +9,51 @@ Questions?:
  <div align="center">   <h3>Welcome <%= @user.name if @user.name %></h3>
   <br><br>
     <div align="center">
+   
       <%= form_tag "/" do %>
- <table class="table table-condensed">
-    <tr>
-      <th>My Files</th>
-      <th>Product</th>
-      <th>Price</th>
-      <th>Quantity</th>
-      <th>Re-Order</th>
-      <th>Place New Order</th>
-      <th>Line price</th>
-    </tr>
-    <% @products.each do |product| %>
+
+<table class="table">
+  <tr>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Price each</th>
+    <th>Quantity</th>
+    <th>Update</th>
+    <th>Line price</th>
+  </tr>
+  
+  <% @products.each do |product| %>
     <% line = CartLine.find_by(cart_id: @cart.id, product_id: product.id) %>
     <tr>
       <td>
-        <%= link_to (image_tag product.image_filename), class: "form-control" %>
+        <%= image_tag product.image_filename %>
       </td>
- 
       <td>
-          <%= product.name %>
+        <%= product.name %>
       </td>
-      
       <td>
-          $<%= sprintf('%.2f', product.price_per_item) %> 
+        $<%= sprintf('%.2f', product.price_per_item) %>
       </td>
-      
       <td>
-        <div class="col-xs-4">
-          
-  
         <%= text_field_tag "quantity_#{product.id}", 
-          line.quantity, class: "form-control" %>
-       </div>
+          line.quantity,
+          class: "quantity", class: "form-control" %>
       </td>
-   
-       <td>
-        <%= submit_tag "Re-order", class: "form-control" %>
-      </td>
-    
-    
       <td>
-        <%= link_to "Place New", users_path %>
+        <%= submit_tag "Update", class: "form-control" %>
       </td>
-    
       <td>
-         $<%= sprintf('%.2f', line.line_price) %> 
+        $<%= sprintf('%.2f', line.line_price) %>
       </td>
     </tr>
   <% end %>
-  </table>
-   </div>
- <div class="form-group">
-</form>
+</table>
+
 <br clear="both">
 
 <p>
-  <b>Choose shipping method:</b><br>
-
+  <b>Choose Shipping Method:</b><br><br>
+  
   <% @ship_methods.each do |ship_method| %>
 
     <%= radio_button_tag :ship_method_id, ship_method.id,
@@ -75,22 +62,23 @@ Questions?:
     $<%= sprintf('%.2f', ship_method.price_per_cart) %>
     + $<%= sprintf('%.2f', ship_method.price_per_item) %> each item
     <br>
-
+     
+      
   <% end %>
 
-  <%= submit_tag "Update", class: "form-control" %>
+  <%= submit_tag "Update"   %>
 
   Shipping total is:
   $<%= sprintf('%.2f', @cart.ship_price) %>
 </p>
 
 <p>
-  <b>Total price</b>
+  <b>Total Price</b>
   $<%= sprintf('%.2f', @cart.total_price) %>
 </p>
 
 <% end %>
-</div>
+
 <br><br>
 <form>
   <div class="form-group">

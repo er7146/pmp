@@ -1,7 +1,9 @@
 class Cart < ActiveRecord::Base
+  belongs_to :user
   belongs_to :ship_method
   has_many :cart_lines
-  
+
+    
   def ship_price
     total = self.ship_method.price_per_cart
     self.cart_lines.each do |line|
