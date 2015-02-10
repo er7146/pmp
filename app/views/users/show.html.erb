@@ -3,17 +3,13 @@
   <p>Contact Email: <%= @user.email if @user.email %></p>
    <table class="table">
   <tr>
-    <th>Customer</th>
+    
     <th>Delivery</th>
     <th>Shipping Cost</th>
     <th>Total Price</th>
   </tr>
 
     <tr>
-      
-      <td>
-        <%= @cart.user.name  %>
-      </td>
       
       <td>
         <%= @cart.ship_method.name  %>
