@@ -1,15 +1,18 @@
-<div align="center"><h4>My Order id# <%= @cart.id %>
+<div align="center"><h4> Order
   for <%= @user.name if @user.name %></h4>
   <p>Contact Email: <%= @user.email if @user.email %></p>
    <table class="table">
   <tr>
-    
+    <th>Date</th>
     <th>Delivery</th>
     <th>Shipping Cost</th>
     <th>Total Price</th>
   </tr>
 
     <tr>
+       <td>
+        <%= @cart.created_at  %>
+      </td>
       
       <td>
         <%= @cart.ship_method.name  %>
