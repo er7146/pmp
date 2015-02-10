@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       @cart = Cart.find_by(id: session[:cart_id])
     if @cart == nil
       @cart = Cart.new
-      @cart.user_id = current_user.id
+      #@cart.user_id = current_user.id
       @cart.ship_method_id = ShipMethod.first.id
       @cart.save!
       session[:cart_id] = @cart.id
